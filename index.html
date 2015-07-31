@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>URL Inspector</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/main.js"></script> 
+    </head>
+    <body>
+        <p>&nbsp;</p>
+        <div class="container col-sm-6 col-sm-offset-3">
+            <h1>URL Inspector</h1>
+            <p class="lead">Extract parameters from any URL for easy inspection.</p>
+            <p>&nbsp;</p>
+            <form action="index.php" method="POST" id="form">
+                <textarea rows="8" cols="100" name="url" id="url" placeholder="Enter a URL to be inspected..."></textarea>
+            </form>
+            <div class="spacer-top">
+                <a class="btn btn-default" href="#" id="submit">Submit</a>
+                <a class="btn btn-default" href="#" onclick="reload_page()">Reset</a>
+            </div>
+            <p>&nbsp;</p>
+                <p class="lead">Parameters and Values:</p>
+            <div id="result-container" class="collapse">
+                <div class="container">
+                    <div id="result">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <p>&#169; <a href="http://mays.io" target="_blank">Mays | io</a></p>
+            </div>
+        </div>
+    </body>
+</html>
