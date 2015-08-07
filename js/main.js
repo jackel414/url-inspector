@@ -23,7 +23,7 @@ function decode_url()
             if ( !keyValue[1] ) {
                 keyValue[1] = '';
             }
-            resultContainer.innerHTML += "<p>" + keyValue[0] + " => " + keyValue[1] + "</p>";
+            resultContainer.innerHTML += "<p>" + keyValue[0] + " => " + keyValue[1].replace(/%3D/g, '=') + "</p>";
         });
     } else {
         resultContainer.innerHTML += "<p><em>Invalid URL or no parameters passed.</em></p>"
