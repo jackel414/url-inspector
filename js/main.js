@@ -18,7 +18,7 @@ function decode_url()
         var paramsList = params.split("&");
         
         paramsList.forEach(function(item) {
-            var decodedItem = item.replace(/%20/g, ' ').replace(/%2F/g, '/');
+            var decodedItem = item.replace(/%20/g, ' ').replace(/%2F/g, '/').replace(/%40/g, '@');
             keyValue = decodedItem.split("=");
             if ( !keyValue[1] ) {
                 keyValue[1] = '';
