@@ -1,18 +1,28 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 0; /* bottom = footer height */
+}
+
 .spacer-top {
     margin-top: 10px;
 }
 
 #footer {
-	width: 100%;
-	height: 80px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 100%;
+    padding: 0 0 10px 10px;
 }
 
-#footer div {
-	left: 5;
-	bottom: 0;
-	position: absolute;
-	padding-left: 10px;
+#title {
+	display: inline-block;
+}
+
+#logo {
+	margin-bottom: 10px;
 }

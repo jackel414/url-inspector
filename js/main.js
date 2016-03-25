@@ -14,6 +14,11 @@ function decode_url()
     
     if ( url.indexOf("?") >= 0 ) {
         var urlParts = url.split("?");
+        console.log(urlParts.length);
+        if ( urlParts.length > 2 ) {
+            resultContainer.innerHTML += "<p class='text-danger'><em>Invalid URL - too many query separators (?).</em></p>"
+            return false;
+        }
         var params = urlParts[1];
         var paramsList = params.split("&");
         
@@ -26,7 +31,7 @@ function decode_url()
             resultContainer.innerHTML += "<p>" + keyValue[0] + " => " + keyValue[1].replace(/%3D/g, '=') + "</p>";
         });
     } else {
-        resultContainer.innerHTML += "<p><em>Invalid URL or no parameters passed.</em></p>"
+        resultContainer.innerHTML += "<p class='text-danger'><em>Invalid URL or no parameters passed.</em></p>"
     }
     
     return false;
