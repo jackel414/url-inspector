@@ -23,7 +23,7 @@ function decode_url()
         var paramsList = params.split("&");
         
         paramsList.forEach(function(item) {
-            var decodedItem = item.replace(/%20/g, ' ').replace(/%2F/g, '/').replace(/%40/g, '@').replace(/%3A/g, ':').replace(/%5B/g, '[').replace(/%5D/g, ']').replace(/%2C/g, ',');
+            var decodedItem = item.replace(/%20/g, ' ').replace(/%2F/g, '/').replace(/%40/g, '@').replace(/%3A/g, ':').replace(/%5B/g, '[').replace(/%5D/g, ']').replace(/%2C/g, ',').replace(/\+/g, ' ');
             keyValue = decodedItem.split("=");
             if ( !keyValue[1] ) {
                 keyValue[1] = '';
