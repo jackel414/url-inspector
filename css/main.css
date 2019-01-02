@@ -23,6 +23,11 @@ body {
 	display: inline-block;
 }
 
-#logo {
-	margin-bottom: 10px;
+.logo {
+    width: 200px;
+    margin: 10px auto;
+}
+
+.logo img {
+    width: 100%;
 }

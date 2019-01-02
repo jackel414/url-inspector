@@ -5,20 +5,20 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <!-- favicon credit: Search by Luis Prado from the Noun Project -->
-        <link href="favicon_new.ico" type="image/x-icon" rel="icon">
+        <link href="favicon.ico" type="image/x-icon" rel="icon">
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/main.js"></script> 
     </head>
     <body>
         <p>&nbsp;</p>
         <div class="container col-sm-6 col-sm-offset-3">
-            <!-- Search by Luis Prado from the Noun Project             -->
-            <img id="logo" src="logo.png" alt="Smiley face" height="42" width="42"> 
-            <h1 id="title">URL Inspector</h1>
-            <p class="lead">Extract parameters from any URL for easy inspection.</p>
+            <div class="logo">
+                <img src="logo_large.png" alt="URL Inspector"> 
+            </div>
+            <p class="lead text-center">Extract parameters from any URL for easy inspection.</p>
             <p>&nbsp;</p>
             <form action="index.php" method="POST" id="form">
-                <textarea rows="8" cols="100" name="url" id="url" placeholder="Enter a URL to be inspected..."></textarea>
+                <textarea rows="8" cols="84" name="url" id="url" placeholder="Enter a URL to be inspected..."></textarea>
             </form>
             <div class="spacer-top">
                 <a class="btn btn-default" href="#" id="submit">Submit</a>
