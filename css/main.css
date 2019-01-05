@@ -31,3 +31,12 @@ body {
 .logo img {
     width: 100%;
 }
+
+#result-url {
+    margin-top: 30px;
+}
+
+#decoded-url {
+    width: 650px;
+    word-break:break-all;
+}

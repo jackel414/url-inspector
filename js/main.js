@@ -2,6 +2,7 @@ $(document).ready(function() {
     $("#submit").on("click", function(e) {
         e.preventDefault();
         decode_url();
+        $("#result-url").slideDown(200);
         $("#result-container").slideDown(200);
     })
 })
@@ -35,6 +36,12 @@ function decode_url()
         }
         resultContainer.innerHTML += "<p>" + keyValue[0] + " => " + keyValue[1].replace(/%3D/g, '=') + "</p>";
     });
+
+    var decodedUrl = decode_url_param(url);
+
+    var urlResultContainer = document.getElementById("decoded-url");
+
+    urlResultContainer.innerHTML += "<p>" + decodedUrl + "</p>";
     
     return false;
 }
