@@ -6,10 +6,6 @@ body {
     margin: 0 0 0; /* bottom = footer height */
 }
 
-.spacer-top {
-    margin-top: 10px;
-}
-
 #footer {
     position: absolute;
     left: 0;
@@ -30,6 +26,15 @@ body {
 
 .logo img {
     width: 100%;
+}
+
+.text-box {
+    text-align: center;
+}
+
+.action-button {
+    width: 610px;
+    margin: 10px auto 0;
 }
 
 #result-url {

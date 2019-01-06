@@ -18,14 +18,14 @@
             <p class="lead text-center">Extract parameters from any URL for easy inspection.</p>
             <p>&nbsp;</p>
             <form action="index.php" method="POST" id="form">
-                <div class="text-center">
+                <div class="text-box">
                     <textarea rows="8" cols="84" name="url" id="url" placeholder="Enter a URL to be inspected..."></textarea>
                 </div>
+                <div class="action-button">
+                    <a class="btn btn-default" href="#" id="submit">Submit</a>
+                    <a class="btn btn-default" href="#" onclick="reload_page()">Reset</a>
+                </div>
             </form>
-            <div class="spacer-top">
-                <a class="btn btn-default" href="#" id="submit">Submit</a>
-                <a class="btn btn-default" href="#" onclick="reload_page()">Reset</a>
-            </div>
             <div id="result-url" class="collapse">
                 <p class="lead">Decoded URL:</p>
                 <div id="decoded-url" class="container">
